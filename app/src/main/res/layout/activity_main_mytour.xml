@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3_trangchu"
+    tools:context=".MainActivity_mytour"
     android:background="@drawable/bg4">
 
     <LinearLayout
@@ -15,39 +15,23 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/logo1" />
+            android:src="@drawable/logo1"
+            android:layout_margin="20dp"/>
 
         <TextView
-            android:id="@+id/btnClick_diadiemin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Du Lịch Trong Nước"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:text="Chuyến Đi Của Tôi:"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="180dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/bg_in" />
-
-        <TextView
-            android:id="@+id/btnClick_diadiemout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="Du Lịch Quốc Tế"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/bg_out" />
+        <ListView
+            android:id="@+id/listproduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
@@ -65,9 +49,8 @@
             android:layout_weight="1"
             android:text="Home"
             android:id="@+id/btnClickHome"
-            android:background="@drawable/button_3state"
-            android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,8 +58,9 @@
             android:text="My tour"
             android:id="@+id/btnClick_Mytour"
             style="?android:attr/borderlessButtonStyle"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:background="@drawable/button_3state"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,4 +81,5 @@
             android:textStyle="bold"/>
 
     </LinearLayout>
+
 </RelativeLayout>

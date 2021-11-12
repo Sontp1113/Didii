@@ -41,8 +41,35 @@ public class MainActivity3_trangchu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity3_trangchu.this,
-                        "Bạn đang ở Trang Chủ",
+                        "Bạn đang ở mục 'Trang Chủ'",
                         Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        button = (Button) findViewById(R.id.btnClick_Mytour);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity3_trangchu.this, MainActivity_mytour.class);
+                startActivity(i);
+            }
+        });
+
+        button = (Button) findViewById(R.id.btnClick_News);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity3_trangchu.this, MainActivity_news.class);
+                startActivity(i);
+            }
+        });
+
+        button = (Button) findViewById(R.id.btnClick_me);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity3_trangchu.this, MainActivity_me.class);
+                startActivity(i);
             }
         });
     }

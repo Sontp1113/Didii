@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Didii">
         <activity
+            android:name=".MainActivity_me"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_news"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_mytour"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity5_in_hagiang"
             android:exported="false" />
         <activity

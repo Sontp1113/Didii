@@ -2,6 +2,6 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/red"
         android:state_pressed="true"/>       <!-- Hiện màu đỏ khi ấn vào nút -->
-    <item android:drawable="#73E4D9"
+    <item android:drawable="@color/teal_200"
         android:state_pressed="false"/>      <!-- Hiện màu xanh da trời khi không nhấn nút -->
 </selector>
