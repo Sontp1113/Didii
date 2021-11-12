@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity3_trangchu"
-    android:background="@drawable/bg4">
+    android:background="@drawable/bg7">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             android:text="My tour"
             android:id="@+id/btnClick_Mytour"
             style="?android:attr/borderlessButtonStyle"
-            android:textColor="@color/white"
+            android:textColor="@drawable/button_color"
             android:textStyle="bold"/>
         <Button
             android:layout_width="match_parent"
@@ -84,7 +84,7 @@
             android:text="Tin tức"
             android:id="@+id/btnClick_News"
             style="?android:attr/borderlessButtonStyle"
-            android:textColor="@color/white"
+            android:textColor="@drawable/button_color"
             android:textStyle="bold"/>
         <Button
             android:layout_width="match_parent"
@@ -93,7 +93,7 @@
             android:text="Cá nhân"
             android:id="@+id/btnClick_me"
             style="?android:attr/borderlessButtonStyle"
-            android:textColor="@color/white"
+            android:textColor="@drawable/button_color"
             android:textStyle="bold"/>
 
     </LinearLayout>
