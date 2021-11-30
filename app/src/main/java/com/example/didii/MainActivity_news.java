@@ -6,15 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity_news extends AppCompatActivity {
 
     Button button;
+    ImageView ig;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_news);
+
+        ig = (ImageView) findViewById(R.id.btnClick_Home);
+        ig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity_news.this, MainActivity3_trangchu.class);
+                startActivity(i);
+            }
+        });
 
         button = (Button) findViewById(R.id.btnClickHome);
         button.setOnClickListener(new View.OnClickListener() {
